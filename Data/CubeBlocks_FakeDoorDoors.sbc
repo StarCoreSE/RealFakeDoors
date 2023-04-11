@@ -42,7 +42,7 @@
             <Icon>Textures\GUI\Icons\Cubes\interior_wall.dds</Icon>
             <Description>Description_InteriorWall</Description>
             <CubeSize>Large</CubeSize>
-            <Size x="15" y="15" z="15" />
+            <Size x="1" y="1" z="1" />
             <ModelOffset x="0" y="0" z="0" />
 			<UsesDeformation>false</UsesDeformation>
             <CubeDefinition>
