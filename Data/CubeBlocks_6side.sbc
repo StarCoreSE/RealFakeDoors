@@ -1,69 +1,12 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CubeBlocks>
-    <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition">
-      <Id>
-        <TypeId>RemoteControl</TypeId>
-        <SubtypeId>AICoreMiniRemote</SubtypeId>
-      </Id>
-      <DisplayName>AI Drone Remote</DisplayName>
-      <Icon>textures\Darth_Biomech\gui\AICoreMini.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size>
-        <X>1</X>
-        <Y>1</Y>
-        <Z>2</Z>
-      </Size>
-      <ModelOffset>
-        <X>0</X>
-        <Y>0</Y>
-        <Z>0</Z>
-      </ModelOffset>
-      <Model>models\Darth_Biomech\ai_core_mini.mwm</Model>
-      <Components>
-        <Component Subtype="Construction" Count="2" />
-        <Component Subtype="Computer" Count="8" />
-        <Component Subtype="SteelPlate" Count="1" />
-        <Component Subtype="Display" Count="1" />
-        <Component Subtype="SteelPlate" Count="2" />
-      </Components>
-      <CriticalComponent Subtype="Display" Index="0" />
-      <MountPoints>
-        <MountPoint Side="Front" StartX="0" StartY="0" EndX="2" EndY="2" />
-        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="2" />
-        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
-        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="2" EndY="2" />
-        <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="2" />
-        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
-      </MountPoints>
-      <PhysicsOption>Box</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.40" File="models\Darth_Biomech\ai_core_mini_progress_01.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="models\Darth_Biomech\ai_core_mini_progress_02.mwm" />
-      </BuildProgressModels>
-      <BlockPairName>AICoreRemote</BlockPairName>
-      <RequiredPowerInput>0.2</RequiredPowerInput>
-      <MaxPowerConsumption>2</MaxPowerConsumption>
-      <MinPowerConsumption>0.2</MinPowerConsumption>
-      <ConsumptionPower>1</ConsumptionPower>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>10</BuildTimeSeconds>
-      <CenterOffset xsi:nil="true" />
-      <EnableFirstPerson>false</EnableFirstPerson>
-      <EnableShipControl>true</EnableShipControl>
-      <DamageEffectId>214</DamageEffectId>
-	  <ResourceSinkGroup>Utility</ResourceSinkGroup>
-	  <DamagedSound>ParticleElectrical</DamagedSound>
-    </Definition>
     <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition">
       <Id>
         <TypeId>MyProgrammableBlock</TypeId>
-        <SubtypeId>AICoreMini</SubtypeId>
+        <SubtypeId>6SidePBSmall</SubtypeId>
       </Id>
-      <DisplayName>AI Drone Node</DisplayName>
+      <DisplayName>6 Sided Programmable Block (Small)</DisplayName>
       <Icon>textures\Darth_Biomech\gui\AICoreMini.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -118,9 +61,9 @@
     <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition">
       <Id>
         <TypeId>MyProgrammableBlock</TypeId>
-        <SubtypeId>AICore</SubtypeId>
+        <SubtypeId>6SidePB</SubtypeId>
       </Id>
-      <DisplayName>AI Computer Core</DisplayName>
+      <DisplayName>6 Sided Programmable Block </DisplayName>
       <Icon>textures\Darth_Biomech\gui\AICoreLarge.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
